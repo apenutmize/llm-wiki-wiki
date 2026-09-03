@@ -1,0 +1,9 @@
+# Obsidian per-user workspace state (keep the vault content, not the local UI state)
+.obsidian/workspace*
+.obsidian/cache
+.trash/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
