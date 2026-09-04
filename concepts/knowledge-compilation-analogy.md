@@ -38,3 +38,6 @@ curate and ask; the model writes and maintains. See [Obsidian](../entities/obsid
 
 ## Sources
 - [Joshi — LLM Wiki walkthrough](../sources/source-joshi-medium-llm-wiki.md)
+
+## Related
+- [Flow-through vs compounding artifacts](flow-through-vs-compounding-artifacts.md) — why a pipeline of Markdown artifacts isn't yet a compounding wiki.

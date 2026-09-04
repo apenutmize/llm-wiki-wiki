@@ -4,8 +4,8 @@ type: concept
 tags: [llm-wiki, risk, reliability, critique]
 status: draft
 created: 2026-09-02
-updated: 2026-09-02
-sources: [source-joshi-medium-llm-wiki, source-okf-spec]
+updated: 2026-09-04
+sources: [source-joshi-medium-llm-wiki, source-okf-spec, source-anthropic-ai-native-sdlc]
 ---
 
 # Hallucination-baking risk
@@ -41,6 +41,16 @@ good habits into machine-checkable structure:
 - **[Attested Computation](attested-computation.md)** — computed values can be
   re-executed and verified rather than trusted, so a fabricated number fails the gate.
 
+## Higher stakes in a codebase
+The risk grows sharply when the wiki feeds a software pipeline: a wrong "fact" baked
+into a page about, say, the auth flow can mislead every downstream plan and spec.
+The [AI-native SDLC](../summaries/llm-wiki-applied-to-sdlc.md) supplies the matching
+controls — separation of duties (agents can't approve their own work) maps to
+verified trust tiers, and evals/CI map to [Attested Computation](attested-computation.md)
+for any *computed* claim. There, attesting risky facts instead of asserting them is
+not optional polish; it's the safeguard that keeps the compounding property from
+compounding errors.
+
 ## Why it's a design concern, not a dealbreaker
 The pattern deliberately trades a step of source-traceability (answers are 1–2
 steps removed from raw text) for cross-source synthesis. That trade-off is
@@ -50,3 +60,4 @@ for high-stakes, fast-changing corpora, which is RAG's territory.
 ## Sources
 - [Joshi — LLM Wiki walkthrough](../sources/source-joshi-medium-llm-wiki.md)
 - [OKF Specification v0.2](../sources/source-okf-spec.md)
+- [Anthropic — AI-Native SDLC Playbook](../sources/source-anthropic-ai-native-sdlc.md)

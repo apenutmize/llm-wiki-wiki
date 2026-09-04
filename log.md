@@ -41,3 +41,11 @@ correct via a new entry. Format defined in [CLAUDE.md](CLAUDE.md) §6.
 - action: exported slide-ready images of the two diagrams to assets/
 - pages: [assets/three-layer-architecture.png, assets/three-layer-architecture.svg, assets/three-operations.png, assets/three-operations.svg]
 - note: rendered the wiki's Mermaid at 3x on a white background; PNGs (~2400–2600px wide) for drop-in slide use, SVGs for scalable/editable use. Source of truth stays the .md diagrams; regenerate from those if edited.
+
+## 2026-09-04  ·  ingest
+- action: ingested Anthropic's AI-Native SDLC Playbook (first source that *applies* the pattern, not just describes it)
+- pages: [source-anthropic-ai-native-sdlc, summaries/llm-wiki-applied-to-sdlc, concepts/flow-through-vs-compounding-artifacts, entities/anthropic]
+- note: created 1 summary + 1 concept + 1 entity; the summary maps the wiki's three layers/operations onto the playbook's six stages and ties OKF trust/attestation to its governance (separation of duties, evals, control bands).
+- action: densified existing pages with the SDLC angle
+- pages: [concepts/hallucination-baking-risk, concepts/knowledge-compilation-analogy, index]
+- note: added a "higher stakes in a codebase" section keying evals/attestation to the risk page; linked the new flow-through-vs-compounding concept from the compilation analogy. No contradictions — the playbook is an application of the pattern. Local only (not committed/pushed).
