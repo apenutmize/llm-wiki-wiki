@@ -49,6 +49,10 @@ the contribution" — positioned as a lingua franca for exchanging knowledge.
 - [Google Cloud — OKF blog](../sources/source-google-okf-blog.md)
 - [OKF Specification v0.2](../sources/source-okf-spec.md)
 
+## Applications
+- [Applying OKF to the AI-native SDLC](../summaries/llm-wiki-applied-to-sdlc.md) — knowledge layer for a software pipeline.
+- [Applying OKF to 1EdTech specs](../summaries/okf-for-1edtech-specs.md) — a spec bundle for unified semantics and conformance assurance behind EduQuery.
+
 ## Related
 - [Knowledge Bundle](knowledge-bundle.md) · [The context-assembly problem](context-assembly-problem.md)
 - [Google Cloud Knowledge Catalog](../entities/google-cloud-knowledge-catalog.md)

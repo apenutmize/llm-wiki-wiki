@@ -30,8 +30,16 @@ knowledge stays locked behind whichever surface created it.
   agents read and update **shared** markdown libraries that grow more useful over
   time.
 
+## A domain instance
+Education data is a concrete case: the [EduQuery deck](../sources/source-1edtech-eduquery-ai-ready-query.md)
+describes institutions each exposing data differently with bespoke pipelines — the
+same fragmentation, plus its meaning-side twin, the
+[unified-semantics gap](unified-semantics-gap.md).
+
 ## Sources
 - [Google Cloud — OKF blog](../sources/source-google-okf-blog.md)
+- [1EdTech — EduQuery deck](../sources/source-1edtech-eduquery-ai-ready-query.md)
 
 ## Related
 - [Open Knowledge Format](open-knowledge-format.md) · [Knowledge as compilation](knowledge-compilation-analogy.md)
+- [The unified-semantics gap](unified-semantics-gap.md)

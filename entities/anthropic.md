@@ -20,6 +20,8 @@ that playbook and this wiki's [schema](../CLAUDE.md) use.
 - `CLAUDE.md` — the file that carries this wiki's schema — is an Anthropic /
   Claude Code convention, which is why the SDLC playbook and the LLM-wiki pattern
   share a substrate. See [Applying the LLM wiki to the AI-native SDLC](../summaries/llm-wiki-applied-to-sdlc.md).
+- Originated the [Model Context Protocol](../concepts/model-context-protocol.md)
+  (Nov 2024) — the agent-to-data transport the EduQuery proposal builds on.
 
 ## Sources
 - [Anthropic — AI-Native SDLC Playbook](../sources/source-anthropic-ai-native-sdlc.md)

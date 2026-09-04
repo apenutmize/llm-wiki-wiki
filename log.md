@@ -49,3 +49,16 @@ correct via a new entry. Format defined in [CLAUDE.md](CLAUDE.md) §6.
 - action: densified existing pages with the SDLC angle
 - pages: [concepts/hallucination-baking-risk, concepts/knowledge-compilation-analogy, index]
 - note: added a "higher stakes in a codebase" section keying evals/attestation to the risk page; linked the new flow-through-vs-compounding concept from the compilation analogy. No contradictions — the playbook is an application of the pattern. Local only (not committed/pushed).
+
+## 2026-09-04  ·  synthesize
+- action: added an "At a glance" Mermaid diagram + slide-ready PNG/SVG for the SDLC application
+- pages: [summaries/llm-wiki-applied-to-sdlc, assets/okf-bundle-in-sdlc.png, assets/okf-bundle-in-sdlc.svg]
+- note: bundle-beside-pipeline diagram (query early / ingest late / reopen loop); OKF governance folded into stages. Local only.
+
+## 2026-09-04  ·  ingest
+- action: ingested 1EdTech's "AI-Ready Query Interfaces" (EduQuery) deck — a private local PDF (text extracted via pypdf, 41 slides)
+- pages: [source-1edtech-eduquery-ai-ready-query, summaries/okf-for-1edtech-specs, concepts/unified-semantics-gap, concepts/model-context-protocol, entities/1edtech, entities/tim-couper, entities/eduquery]
+- note: created 2 concept + 3 entity pages and a synthesis on OKF bundles of 1EdTech specs for unified semantics + conformance assurance (attested computation as the "assure proper implementation" mechanism). Source url is a local file path; flagged as private — NOT to be pushed without explicit ok.
+- action: densified existing pages
+- pages: [concepts/context-assembly-problem, concepts/open-knowledge-format, entities/anthropic, index]
+- note: linked EduQuery as a domain instance of context-assembly + unified-semantics; added MCP→Anthropic; added an Applications section to the OKF page. No contradictions.

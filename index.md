@@ -20,6 +20,8 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [Attested Computation](concepts/attested-computation.md) — OKF's verifiable contract for computed values.
 - [The context-assembly problem](concepts/context-assembly-problem.md) — the fragmentation OKF is pitched to solve.
 - [Flow-through vs compounding artifacts](concepts/flow-through-vs-compounding-artifacts.md) — why a pipeline of Markdown files isn't yet a compounding wiki.
+- [The unified-semantics gap](concepts/unified-semantics-gap.md) — having the data but no shared definition of what it means.
+- [Model Context Protocol](concepts/model-context-protocol.md) — "USB for AI"; solves access, not meaning.
 
 ## Entities
 - [Andrej Karpathy](entities/andrej-karpathy.md) — originator of the LLM-wiki framing.
@@ -30,11 +32,15 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [Amir Hormati](entities/amir-hormati.md) — Google Cloud BigQuery; co-author of the OKF announcement.
 - [Google Cloud Knowledge Catalog](entities/google-cloud-knowledge-catalog.md) — OKF's reference host and consumer.
 - [Anthropic](entities/anthropic.md) — maker of Claude Code / CLAUDE.md; author of the AI-native SDLC playbook.
+- [1EdTech](entities/1edtech.md) — education-standards consortium (Caliper, OneRoster, QTI, …).
+- [Tim Couper](entities/tim-couper.md) — 1EdTech Chief Architect; author of the EduQuery proposal.
+- [EduQuery](entities/eduquery.md) — proposed standards-based, privacy-centric AI query interface for education data.
 
 ## Summaries
 - [LLM Wiki vs traditional RAG](summaries/llm-wiki-vs-rag.md) — why compounding beats re-retrieval, and where RAG still wins.
 - [OKF vs this wiki's schema](summaries/okf-vs-this-wiki-schema.md) — how the open standard compares to this wiki's own CLAUDE.md conventions.
 - [Applying the LLM wiki to the AI-native SDLC](summaries/llm-wiki-applied-to-sdlc.md) — adding a compounding memory layer to Anthropic's six-stage pipeline.
+- [Applying OKF / the LLM wiki to 1EdTech specs](summaries/okf-for-1edtech-specs.md) — a spec bundle for unified semantics and conformance assurance behind EduQuery.
 
 ## Sources
 - [Karpathy — LLM Wiki gist](sources/source-karpathy-llm-wiki-gist.md) — the seed idea. (live)
@@ -42,3 +48,4 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [Google Cloud — OKF blog](sources/source-google-okf-blog.md) — announcement of the Open Knowledge Format. (live)
 - [OKF Specification v0.2](sources/source-okf-spec.md) — the normative spec in the knowledge-catalog repo. (live)
 - [Anthropic — AI-Native SDLC Playbook](sources/source-anthropic-ai-native-sdlc.md) — a real-world application of the pattern to the software lifecycle. (live)
+- [1EdTech — EduQuery deck](sources/source-1edtech-eduquery-ai-ready-query.md) — AI-ready query interfaces for education data. (private local PDF)
