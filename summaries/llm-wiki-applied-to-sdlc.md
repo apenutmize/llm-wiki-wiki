@@ -18,6 +18,37 @@ the one layer the pipeline lacks: a **persistent, compounding** knowledge base
 beside a pipeline that today produces mostly
 [flow-through artifacts](../concepts/flow-through-vs-compounding-artifacts.md).
 
+## At a glance
+
+```mermaid
+flowchart LR
+    subgraph PIPE["AI-native SDLC pipeline"]
+        direction TB
+        P["Plan<br/>intent.md"] --> D["Design<br/>spec.md"] --> B["Build<br/>plan.md · CLAUDE.md"] --> T["Test<br/>evals → <b>attested</b>"] --> DE["Deploy<br/>review → <b>verified</b>"] --> M["Maintain<br/>monitoring · <b>stale_after</b>"]
+    end
+
+    KB(["📚 OKF Knowledge Bundle<br/>entities · concepts · summaries<br/>index.md · log.md<br/><i>persistent, compounding memory</i>"])
+
+    KB -. "① query" .-> P
+    KB -. "① query" .-> D
+    DE == "② ingest on merge" ==> KB
+    M == "② ingest findings" ==> KB
+    M -. "③ new intent.md · reopens loop" .-> P
+
+    classDef stage fill:#e6f4ea,stroke:#34a853,color:#111;
+    classDef bundle fill:#fef7e0,stroke:#fbbc04,color:#111;
+    class P,D,B,T,DE,M stage;
+    class KB bundle;
+```
+
+**① Read early, ② write late, ③ loop back.** Plan and Design *query* the bundle (so
+specs are drafted against everything already known); Deploy and Maintain *ingest*
+into it (so every shipped change and incident compounds); Maintain's findings reopen
+the loop as new `intent.md`. The OKF governance features are folded into the stages
+where stakes are highest — [attestation](../concepts/attested-computation.md) at
+evals, the [verified trust tier](../concepts/provenance-and-trust.md) at review,
+`stale_after` at monitoring.
+
 ## The gap
 `intent.md → spec.md → plan.md` are scoped to a single feature and archived once it
 ships; `CLAUDE.md` is capped at ~one page. Knowledge doesn't compound across
