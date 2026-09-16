@@ -4,8 +4,8 @@ type: concept
 tags: [llm-wiki, risk, reliability, critique]
 status: draft
 created: 2026-09-02
-updated: 2026-09-04
-sources: [source-joshi-medium-llm-wiki, source-okf-spec, source-anthropic-ai-native-sdlc]
+updated: 2026-09-16
+sources: [source-joshi-medium-llm-wiki, source-okf-spec, source-anthropic-ai-native-sdlc, source-aracil-standards-adoption]
 ---
 
 # Hallucination-baking risk
@@ -57,7 +57,16 @@ steps removed from raw text) for cross-source synthesis. That trade-off is
 acceptable for a bounded, curated corpus you actively maintain — and unacceptable
 for high-stakes, fast-changing corpora, which is RAG's territory.
 
+## "Trusted answers, not just fast answers"
+Aracil puts the same point from the standards side: "Gen AI over unstructured
+documents is not enough." Retrieval gives *fast* answers; a wrong one is cheap to
+emit and, in a standards context, expensive to propagate into inconsistent
+implementations. The fix is *trusted* answers — structured, authoritative, attested —
+which is what [AI-ready standards](ai-ready-standards.md) and the
+[verified trust tier](provenance-and-trust.md) provide.
+
 ## Sources
 - [Joshi — LLM Wiki walkthrough](../sources/source-joshi-medium-llm-wiki.md)
 - [OKF Specification v0.2](../sources/source-okf-spec.md)
 - [Anthropic — AI-Native SDLC Playbook](../sources/source-anthropic-ai-native-sdlc.md)
+- [1EdTech (Aracil) — standards adoption](../sources/source-aracil-standards-adoption.md)

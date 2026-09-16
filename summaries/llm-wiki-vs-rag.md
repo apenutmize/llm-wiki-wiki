@@ -4,8 +4,8 @@ type: summary
 tags: [llm-wiki, rag, comparison, memory]
 status: draft
 created: 2026-09-02
-updated: 2026-09-02
-sources: [source-karpathy-llm-wiki-gist, source-joshi-medium-llm-wiki]
+updated: 2026-09-16
+sources: [source-karpathy-llm-wiki-gist, source-joshi-medium-llm-wiki, source-aracil-standards-adoption]
 ---
 
 # LLM Wiki vs traditional RAG
@@ -50,9 +50,17 @@ requires connecting five sources, not looking up one. The wiki's headline risk i
 that summarization can [bake hallucinations in as facts](../concepts/hallucination-baking-risk.md)
 that propagate; RAG keeps such errors local.
 
+## Echoed from the standards world
+1EdTech's [Aracil](../sources/source-aracil-standards-adoption.md) reaches the same
+conclusion for standards adoption: "Gen AI over unstructured documents is not enough"
+— implementers need *trusted* answers, not just fast ones. That is precisely the
+compounding-wiki case: structure and attestation up front, so retrieval isn't
+re-deriving (and re-risking) meaning on every query.
+
 ## Sources
 - [Karpathy — LLM Wiki gist](../sources/source-karpathy-llm-wiki-gist.md)
 - [Joshi — LLM Wiki walkthrough](../sources/source-joshi-medium-llm-wiki.md)
+- [1EdTech (Aracil) — standards adoption](../sources/source-aracil-standards-adoption.md)
 
 ## Related
 - [Three-layer architecture](../concepts/three-layer-architecture.md)

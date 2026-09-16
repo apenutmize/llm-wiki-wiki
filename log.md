@@ -62,3 +62,16 @@ correct via a new entry. Format defined in [CLAUDE.md](CLAUDE.md) §6.
 - action: densified existing pages
 - pages: [concepts/context-assembly-problem, concepts/open-knowledge-format, entities/anthropic, index]
 - note: linked EduQuery as a domain instance of context-assembly + unified-semantics; added MCP→Anthropic; added an Applications section to the OKF page. No contradictions.
+
+## 2026-09-16  ·  ingest
+- action: ingested 1EdTech's Aracil deck "The path to easier standards adoption" (private local PDF, 23 slides, pypdf text extraction)
+- pages: [source-aracil-standards-adoption, concepts/ai-ready-standards, concepts/standards-adoption-journey, entities/xavi-aracil, entities/1edtech-ai-enablers]
+- note: created 2 concept + 2 entity pages. Strong compounding source — 1EdTech independently converging on the LLM-wiki/OKF pattern (machine-readable/traceable specs, "trusted answers not just fast answers", "Working for Both Claudes" = verified trust tier). Complements the EduQuery deck (authoring/adoption side vs runtime-query side).
+- action: densified existing pages with Aracil's evidence
+- pages: [summaries/okf-for-1edtech-specs, summaries/llm-wiki-vs-rag, concepts/hallucination-baking-risk, concepts/provenance-and-trust, entities/1edtech, index]
+- note: added "1EdTech is already moving this way" section to the OKF-for-1EdTech summary; keyed "Gen AI over unstructured docs is not enough" to the RAG + hallucination pages and "Working for Both Claudes" to provenance/trust. No contradictions. Local only (not committed/pushed).
+
+## 2026-09-16  ·  synthesize
+- action: added a "Skills: the procedural layer" section to the OKF-for-1EdTech summary
+- pages: [summaries/okf-for-1edtech-specs]
+- note: distinguishes the declarative OKF bundle (nouns: meaning + attested checks) from Skills (verbs: triggerable procedures that point into the bundle), citing 1EdTech MPS Skills and the SDLC playbook's Skills; added source-anthropic-ai-native-sdlc to the page's sources. Local only.

@@ -4,8 +4,8 @@ type: concept
 tags: [okf, provenance, trust, verification, reliability]
 status: draft
 created: 2026-09-02
-updated: 2026-09-02
-sources: [source-okf-spec]
+updated: 2026-09-16
+sources: [source-okf-spec, source-aracil-standards-adoption]
 ---
 
 # Provenance and trust
@@ -43,8 +43,18 @@ This is the reliability layer the raw LLM-wiki pattern lacked. Where the
 errors can propagate, OKF lets a consumer *gate* on trust tier and staleness — and,
 for computed values, on [attestation](attested-computation.md).
 
+## "Working for Both Claudes"
+Aracil's [standards-adoption talk](../sources/source-aracil-standards-adoption.md)
+frames the same split memorably: the machine ("Claude AI") needs structure, stable
+references, and authoritative retrieval; the human ("Claude V") brings judgment —
+"faster at scanning, but Claude V is better at saying 'that is not what the workgroup
+meant.'" That human authority is exactly what promotes a page to the **human-reviewed**
+tier; machine-generated content stays provisional until a person signs off.
+
 ## Sources
 - [OKF Specification v0.2](../sources/source-okf-spec.md)
+- [1EdTech (Aracil) — standards adoption](../sources/source-aracil-standards-adoption.md)
 
 ## Related
 - [Attested Computation](attested-computation.md) · [Knowledge Bundle](knowledge-bundle.md)
+- [AI-ready standards](ai-ready-standards.md)

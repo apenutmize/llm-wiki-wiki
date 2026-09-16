@@ -4,8 +4,8 @@ type: entity
 tags: [org, standards, edtech, interoperability]
 status: draft
 created: 2026-09-04
-updated: 2026-09-04
-sources: [source-1edtech-eduquery-ai-ready-query]
+updated: 2026-09-16
+sources: [source-1edtech-eduquery-ai-ready-query, source-aracil-standards-adoption]
 ---
 
 # 1EdTech
@@ -24,7 +24,13 @@ shared semantic + conformance layer.
   [unified-semantics gap](../concepts/unified-semantics-gap.md): valuable standards
   that still diverge in implementation and meaning.
 
+## AI-ready strategy
+Beyond EduQuery, 1EdTech is making its specs [AI-ready](../concepts/ai-ready-standards.md)
+via the [1EdTech AI Enablers](1edtech-ai-enablers.md) program (microsites, MR-Specs,
+MPS Skills, a Standards Portal) — presented by [Xavi Aracil](xavi-aracil.md).
+
 ## Sources
 - [1EdTech — EduQuery deck](../sources/source-1edtech-eduquery-ai-ready-query.md)
+- [1EdTech (Aracil) — standards adoption](../sources/source-aracil-standards-adoption.md)
 
 _Stub — expand as specific specs (Caliper, OneRoster, QTI, CASE) are ingested._

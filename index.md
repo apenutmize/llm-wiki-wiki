@@ -22,6 +22,8 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [Flow-through vs compounding artifacts](concepts/flow-through-vs-compounding-artifacts.md) — why a pipeline of Markdown files isn't yet a compounding wiki.
 - [The unified-semantics gap](concepts/unified-semantics-gap.md) — having the data but no shared definition of what it means.
 - [Model Context Protocol](concepts/model-context-protocol.md) — "USB for AI"; solves access, not meaning.
+- [AI-ready standards](concepts/ai-ready-standards.md) — structured, machine-readable, traceable specs AI can adopt reliably.
+- [The standards-adoption journey](concepts/standards-adoption-journey.md) — Discover → Understand → Implement → Validate → Maintain, and its friction.
 
 ## Entities
 - [Andrej Karpathy](entities/andrej-karpathy.md) — originator of the LLM-wiki framing.
@@ -35,6 +37,8 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [1EdTech](entities/1edtech.md) — education-standards consortium (Caliper, OneRoster, QTI, …).
 - [Tim Couper](entities/tim-couper.md) — 1EdTech Chief Architect; author of the EduQuery proposal.
 - [EduQuery](entities/eduquery.md) — proposed standards-based, privacy-centric AI query interface for education data.
+- [Xavi Aracil](entities/xavi-aracil.md) — 1EdTech Technical Standards Architect; AI-ready standards advocate.
+- [1EdTech AI Enablers](entities/1edtech-ai-enablers.md) — microsites, MR-Specs, MPS Skills, and the Standards Portal.
 
 ## Summaries
 - [LLM Wiki vs traditional RAG](summaries/llm-wiki-vs-rag.md) — why compounding beats re-retrieval, and where RAG still wins.
@@ -49,3 +53,4 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [OKF Specification v0.2](sources/source-okf-spec.md) — the normative spec in the knowledge-catalog repo. (live)
 - [Anthropic — AI-Native SDLC Playbook](sources/source-anthropic-ai-native-sdlc.md) — a real-world application of the pattern to the software lifecycle. (live)
 - [1EdTech — EduQuery deck](sources/source-1edtech-eduquery-ai-ready-query.md) — AI-ready query interfaces for education data. (private local PDF)
+- [1EdTech (Aracil) — standards adoption](sources/source-aracil-standards-adoption.md) — making standards AI-ready for new audiences. (private local PDF)
