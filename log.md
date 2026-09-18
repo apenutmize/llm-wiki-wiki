@@ -75,3 +75,11 @@ correct via a new entry. Format defined in [CLAUDE.md](CLAUDE.md) §6.
 - action: added a "Skills: the procedural layer" section to the OKF-for-1EdTech summary
 - pages: [summaries/okf-for-1edtech-specs]
 - note: distinguishes the declarative OKF bundle (nouns: meaning + attested checks) from Skills (verbs: triggerable procedures that point into the bundle), citing 1EdTech MPS Skills and the SDLC playbook's Skills; added source-anthropic-ai-native-sdlc to the page's sources. Local only.
+
+## 2026-09-18  ·  ingest
+- action: ingested the owner's own capstone talk — Molenaar & Nörenberg, "One Data, One Meaning" (Learning Impact Europe 2026, Thessaloniki); private local PDF (pypdf, 21 slides)
+- pages: [source-molenaar-one-data-one-meaning, summaries/one-data-one-meaning, concepts/context-dictionary, concepts/okf-profile, entities/mark-molenaar, entities/lennart-norenberg, entities/cornelsen, entities/caliper-analytics]
+- note: capstone that assembles every prior source (1EdTech, MCP, EduQuery, Karpathy, OKF, SDLC, Caliper). New concepts: context-dictionary ("Completed" ≠ mastery) and okf-profile; new summary one-data-one-meaning. The talk cites this repo — a self-referential loop. Private (own work); flagged, ingest local only.
+- action: densified existing pages
+- pages: [concepts/unified-semantics-gap, entities/eduquery, summaries/okf-for-1edtech-specs, index]
+- note: added the "Completed" example as the sharpest case of the semantics gap; expanded the EduQuery experiment detail; added the Caliper PoC + OKF-profile next step to the OKF-for-1EdTech summary. No contradictions.

@@ -24,6 +24,8 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [Model Context Protocol](concepts/model-context-protocol.md) — "USB for AI"; solves access, not meaning.
 - [AI-ready standards](concepts/ai-ready-standards.md) — structured, machine-readable, traceable specs AI can adopt reliably.
 - [The standards-adoption journey](concepts/standards-adoption-journey.md) — Discover → Understand → Implement → Validate → Maintain, and its friction.
+- [Context dictionary](concepts/context-dictionary.md) — shared meaning that turns the same data into a decision ("Completed" ≠ mastery).
+- [OKF profile](concepts/okf-profile.md) — a domain-specific tightening of OKF (agreed types, fields, conventions).
 
 ## Entities
 - [Andrej Karpathy](entities/andrej-karpathy.md) — originator of the LLM-wiki framing.
@@ -39,12 +41,17 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [EduQuery](entities/eduquery.md) — proposed standards-based, privacy-centric AI query interface for education data.
 - [Xavi Aracil](entities/xavi-aracil.md) — 1EdTech Technical Standards Architect; AI-ready standards advocate.
 - [1EdTech AI Enablers](entities/1edtech-ai-enablers.md) — microsites, MR-Specs, MPS Skills, and the Standards Portal.
+- [Mark Molenaar](entities/mark-molenaar.md) — ApeNutMize; this wiki's owner and co-author of "One Data, One Meaning".
+- [Lennart Nörenberg](entities/lennart-norenberg.md) — Cornelsen; co-author of the same talk.
+- [Cornelsen](entities/cornelsen.md) — major German educational publisher.
+- [Caliper Analytics](entities/caliper-analytics.md) — 1EdTech learning-events standard; the OKF-bundle proof of concept.
 
 ## Summaries
 - [LLM Wiki vs traditional RAG](summaries/llm-wiki-vs-rag.md) — why compounding beats re-retrieval, and where RAG still wins.
 - [OKF vs this wiki's schema](summaries/okf-vs-this-wiki-schema.md) — how the open standard compares to this wiki's own CLAUDE.md conventions.
 - [Applying the LLM wiki to the AI-native SDLC](summaries/llm-wiki-applied-to-sdlc.md) — adding a compounding memory layer to Anthropic's six-stage pipeline.
 - [Applying OKF / the LLM wiki to 1EdTech specs](summaries/okf-for-1edtech-specs.md) — a spec bundle for unified semantics and conformance assurance behind EduQuery.
+- [One Data, One Meaning](summaries/one-data-one-meaning.md) — the capstone: interoperable data, non-interoperable interpretation, and a Caliper OKF-bundle PoC.
 
 ## Sources
 - [Karpathy — LLM Wiki gist](sources/source-karpathy-llm-wiki-gist.md) — the seed idea. (live)
@@ -54,3 +61,4 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [Anthropic — AI-Native SDLC Playbook](sources/source-anthropic-ai-native-sdlc.md) — a real-world application of the pattern to the software lifecycle. (live)
 - [1EdTech — EduQuery deck](sources/source-1edtech-eduquery-ai-ready-query.md) — AI-ready query interfaces for education data. (private local PDF)
 - [1EdTech (Aracil) — standards adoption](sources/source-aracil-standards-adoption.md) — making standards AI-ready for new audiences. (private local PDF)
+- [Molenaar & Nörenberg — One Data, One Meaning](sources/source-molenaar-one-data-one-meaning.md) — the owner's own Learning Impact Europe 2026 talk; cites this repo. (private local PDF)

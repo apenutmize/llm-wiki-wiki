@@ -5,7 +5,7 @@ tags: [okf, 1edtech, eduquery, semantics, conformance, mcp, application]
 status: draft
 created: 2026-09-04
 updated: 2026-09-16
-sources: [source-1edtech-eduquery-ai-ready-query, source-aracil-standards-adoption, source-okf-spec, source-google-okf-blog, source-anthropic-ai-native-sdlc]
+sources: [source-1edtech-eduquery-ai-ready-query, source-aracil-standards-adoption, source-molenaar-one-data-one-meaning, source-okf-spec, source-google-okf-blog, source-anthropic-ai-native-sdlc]
 generated: { by: claude-code/opus-4.8, at: 2026-09-04T00:00:00Z }
 ---
 
@@ -146,6 +146,15 @@ is the [verified trust tier](../concepts/provenance-and-trust.md): the machine
 retrieves, the human stays authoritative. Where EduQuery is the *runtime query* side,
 Aracil covers the *authoring/adoption* side — two halves of the same bundle.
 
+## From proposal to proof of concept
+[Molenaar & Nörenberg](../sources/source-molenaar-one-data-one-meaning.md) take this
+from idea to a running PoC: **Caliper Analytics published as an OKF/LLM-Wiki bundle**,
+so a Caliper event's meaning — its [context dictionary](../concepts/context-dictionary.md) —
+is authoritative and machine-readable. Their proposed next step, an
+[OKF profile for EdTech](../concepts/okf-profile.md) (agreed metadata fields/tags),
+is what would make separate spec bundles (Caliper, QTI, OneRoster) line up and
+reason together. See [One Data, One Meaning](one-data-one-meaning.md).
+
 ## The one caveat
 The bundle must never become an **unaudited second source of truth** that drifts from
 the normative specs. Keep the spec documents as immutable
@@ -157,6 +166,7 @@ the "facts" are standards other systems must obey.
 ## Sources
 - [1EdTech — EduQuery deck](../sources/source-1edtech-eduquery-ai-ready-query.md)
 - [1EdTech (Aracil) — standards adoption](../sources/source-aracil-standards-adoption.md)
+- [Molenaar & Nörenberg — One Data, One Meaning](../sources/source-molenaar-one-data-one-meaning.md)
 - [OKF Specification v0.2](../sources/source-okf-spec.md)
 - [Google Cloud — OKF blog](../sources/source-google-okf-blog.md)
 - [Anthropic — AI-Native SDLC Playbook](../sources/source-anthropic-ai-native-sdlc.md)
