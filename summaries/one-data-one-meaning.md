@@ -17,6 +17,39 @@ wiki has ingested and lands them on one problem in learning analytics — **the 
 is interoperable, but its interpretation is not** — and one answer: publish the
 shared meaning as an OKF/LLM-Wiki bundle.
 
+## At a glance
+
+```mermaid
+flowchart TB
+    EV["📎 'Completed' event (Caliper)<br/>transmitted intact between systems"]
+
+    subgraph AMB["Without shared meaning — divergent readings"]
+        direction LR
+        D1["Data logs:<br/>reached the last page"]
+        T1["Teacher assumes:<br/>they understood it"]
+        S1["Student thinks:<br/>I've mastered it"]
+    end
+    Q["❓ ambiguity → wrong call<br/>move on too soon"]
+
+    CD(["📖 Context dictionary<br/>'Completed' = last page reached,<br/><i>not</i> understanding shown"])
+    DEC["✅ Teaching decision<br/>last page ≠ mastery →<br/>ask one quick question"]
+
+    EV -. "without" .-> AMB --> Q
+    EV == "with a context dictionary" ==> CD ==> DEC
+
+    classDef event fill:#e8f0fe,stroke:#4285f4,color:#111;
+    classDef bad fill:#fde8e8,stroke:#d9534f,color:#111;
+    classDef dict fill:#fef7e0,stroke:#fbbc04,color:#111;
+    classDef good fill:#e6f4ea,stroke:#34a853,color:#111;
+    class EV event; class D1,T1,S1,Q bad; class CD dict; class DEC good;
+```
+
+**Same event, two fates.** Without shared meaning the "Completed" event scatters into
+three private readings and a wrong call; run through a
+[context dictionary](../concepts/context-dictionary.md) it resolves to one meaning the
+teacher can act on. The data was always interoperable — the *dictionary* is what makes
+the interpretation interoperable too.
+
 ## The gap it names
 EdTech standards deliver strong *technical* interoperability: events flow intact
 between platforms. But the same Caliper "Completed" event is read three ways — the

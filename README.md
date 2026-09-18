@@ -8,6 +8,17 @@ It is built as an **[Open Knowledge Format](concepts/open-knowledge-format.md)
 (OKF v0.2)** bundle: plain Markdown + YAML frontmatter, readable with `cat`,
 diffable in git, and openable as an [Obsidian](entities/obsidian.md) vault.
 
+## Origin
+
+This wiki was the spark's proof of concept. It began as the working example behind
+the conference session **"One Data, One Meaning: AI Enabling Interpretation for
+Learning Analytics"** — Mark Molenaar (ApeNutMize) & Lennart Nörenberg (Cornelsen
+Verlag), **Learning Impact Europe 2026, Thessaloniki**. The talk asks how AI can
+supply the *shared meaning* that interoperable EdTech data lacks, and points at the
+LLM-wiki / OKF pattern as the answer — so this repo both demonstrates the method and
+is cited by the talk. See **[One Data, One Meaning](summaries/one-data-one-meaning.md)**
+and its [source note](sources/source-molenaar-one-data-one-meaning.md).
+
 ## How it works
 
 The wiki has three layers (see [Three-layer architecture](concepts/three-layer-architecture.md)):
