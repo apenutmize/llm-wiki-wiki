@@ -55,4 +55,5 @@ the contribution" — positioned as a lingua franca for exchanging knowledge.
 
 ## Related
 - [Knowledge Bundle](knowledge-bundle.md) · [The context-assembly problem](context-assembly-problem.md)
+- [Presentation layer](presentation-layer.md) — rendering a bundle for humans (Obsidian / Astro / GitBook).
 - [Google Cloud Knowledge Catalog](../entities/google-cloud-knowledge-catalog.md)

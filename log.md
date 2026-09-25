@@ -83,3 +83,11 @@ correct via a new entry. Format defined in [CLAUDE.md](CLAUDE.md) §6.
 - action: densified existing pages
 - pages: [concepts/unified-semantics-gap, entities/eduquery, summaries/okf-for-1edtech-specs, index]
 - note: added the "Completed" example as the sharpest case of the semantics gap; expanded the EduQuery experiment detail; added the Caliper PoC + OKF-profile next step to the OKF-for-1EdTech summary. No contradictions.
+
+## 2026-09-25  ·  ingest
+- action: ingested GitBook (grounded in its docs via WebFetch) and formalized the "presentation layer" concept
+- pages: [source-gitbook-docs, concepts/presentation-layer, entities/gitbook, entities/astro, assets/okf-gitbook.png, assets/okf-gitbook.svg]
+- note: presentation-layer = rendering an OKF bundle for humans without owning the source of truth; three instances on one spectrum — Obsidian (local) / Astro (self-hosted static site, behind 1EdTech microsites, per maintainer) / GitBook (hosted SaaS, verified bidirectional Git Sync + change requests + MCP/llms.txt). Diagram embedded + saved to assets. GitBook facts grounded in gitbook.com/docs; frontmatter round-trip flagged as unverified.
+- action: densified existing pages
+- pages: [entities/obsidian, entities/1edtech-ai-enablers, concepts/open-knowledge-format, summaries/one-data-one-meaning, index]
+- note: positioned Obsidian as the local presentation layer; noted 1EdTech microsites are built on Astro (per maintainer); linked presentation-layer from OKF and the capstone. No contradictions.

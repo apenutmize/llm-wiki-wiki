@@ -26,6 +26,7 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [The standards-adoption journey](concepts/standards-adoption-journey.md) — Discover → Understand → Implement → Validate → Maintain, and its friction.
 - [Context dictionary](concepts/context-dictionary.md) — shared meaning that turns the same data into a decision ("Completed" ≠ mastery).
 - [OKF profile](concepts/okf-profile.md) — a domain-specific tightening of OKF (agreed types, fields, conventions).
+- [Presentation layer](concepts/presentation-layer.md) — rendering a bundle for humans (Obsidian / Astro / GitBook) without owning the source of truth.
 
 ## Entities
 - [Andrej Karpathy](entities/andrej-karpathy.md) — originator of the LLM-wiki framing.
@@ -45,6 +46,8 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [Lennart Nörenberg](entities/lennart-norenberg.md) — Cornelsen; co-author of the same talk.
 - [Cornelsen](entities/cornelsen.md) — major German educational publisher.
 - [Caliper Analytics](entities/caliper-analytics.md) — 1EdTech learning-events standard; the OKF-bundle proof of concept.
+- [GitBook](entities/gitbook.md) — hosted docs platform; a presentation layer over an OKF bundle (Git Sync, MCP, llms.txt).
+- [Astro](entities/astro.md) — static-site generator behind 1EdTech's microsites; a self-hosted presentation layer.
 
 ## Summaries
 - [LLM Wiki vs traditional RAG](summaries/llm-wiki-vs-rag.md) — why compounding beats re-retrieval, and where RAG still wins.
@@ -62,3 +65,4 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [1EdTech — EduQuery deck](sources/source-1edtech-eduquery-ai-ready-query.md) — AI-ready query interfaces for education data. (private local PDF)
 - [1EdTech (Aracil) — standards adoption](sources/source-aracil-standards-adoption.md) — making standards AI-ready for new audiences. (private local PDF)
 - [Molenaar & Nörenberg — One Data, One Meaning](sources/source-molenaar-one-data-one-meaning.md) — the owner's own Learning Impact Europe 2026 talk; cites this repo. (private local PDF)
+- [GitBook — product documentation](sources/source-gitbook-docs.md) — grounding for the presentation-layer / GitBook pages. (live)

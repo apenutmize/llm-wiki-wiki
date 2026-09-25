@@ -26,5 +26,10 @@ This wiki currently uses **relative Markdown links** rather than Obsidian-style
 `[[wikilinks]]` (see [CLAUDE.md](../CLAUDE.md) §4.3). Obsidian can still open the
 folder; only the link syntax differs.
 
+## As a presentation layer
+Obsidian is the *local* end of the [presentation-layer](../concepts/presentation-layer.md)
+spectrum — a viewer/editor for the maintainer, versus self-hosted [Astro](astro.md)
+or hosted [GitBook](gitbook.md) for a public audience.
+
 ## Sources
 - [Joshi — LLM Wiki walkthrough](../sources/source-joshi-medium-llm-wiki.md)

@@ -101,3 +101,4 @@ That loop is the pattern working as intended, seen from the outside.
 
 ## Related
 - [Applying OKF to 1EdTech specs](okf-for-1edtech-specs.md) · [Context dictionary](../concepts/context-dictionary.md) · [OKF profile](../concepts/okf-profile.md)
+- [Presentation layer](../concepts/presentation-layer.md) — one architecture (Obsidian / Astro / GitBook) serving humans and agents.

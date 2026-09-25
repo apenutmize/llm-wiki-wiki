@@ -18,7 +18,9 @@ body shipping the [LLM-wiki / OKF](../concepts/open-knowledge-format.md) pattern
 ## The pieces
 - **Standards Microsites** — a unified navigation/accessibility layer that separates
   core normative material from surrounding guidance while keeping deep traceability
-  ("a better standards experience is the goal").
+  ("a better standards experience is the goal"). A concrete
+  [presentation layer](../concepts/presentation-layer.md); per the maintainer, the
+  microsites are built on **[Astro](astro.md)**.
 - **MR-Specs (machine-readable specifications)** — not just format conversion but
   *preserving meaning* and logical relationships, enabling generated documentation,
   implementation checklists, test alignment, and conformance workflows. This is the
