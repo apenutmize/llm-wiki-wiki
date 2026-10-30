@@ -45,8 +45,9 @@ flowchart LR
 ```
 
 One bundle, a swappable presentation layer, one audience of humans *and* agents. The
-three options trade control for convenience (local → self-hosted → SaaS); the GitBook
-case is drawn out in detail below.
+options trade control for convenience (local → self-hosted → SaaS, plus
+[SharePoint](../entities/sharepoint.md) as the enterprise/M365 variant); the diagram
+shows the main three, and the GitBook case is drawn out in detail below.
 
 ## The rule: render, don't own
 The compiled bundle stays authoritative — the [LLM maintainer](three-layer-architecture.md)
@@ -55,7 +56,7 @@ also allows editing, commits back through git). It should never hold the
 [trust/attestation metadata](provenance-and-trust.md) as its private copy, because
 those fields may not round-trip.
 
-## Three concrete options
+## Concrete options
 - **[Obsidian](../entities/obsidian.md)** — a *local* editor/viewer over the vault;
   zero hosting, great for the maintainer, not a public site.
 - **[Astro](../entities/astro.md)** — a *self-built, self-hosted* static site;
@@ -64,9 +65,13 @@ those fields may not round-trip.
 - **[GitBook](../entities/gitbook.md)** — a *hosted SaaS* with a WYSIWYG editor,
   **bidirectional Git Sync**, change-request review, and built-in agent endpoints
   (MCP, `llms.txt`, `.md` export).
+- **[SharePoint](../entities/sharepoint.md)** — the *enterprise/M365* option: content
+  types ≈ frontmatter, approval workflows ≈ the verified tier, and M365 Copilot as
+  the query surface — all inside an enterprise governance boundary. Not git/Markdown-
+  native, so it needs Graph/Power Automate glue rather than built-in sync.
 
-They sit on one spectrum — local → self-hosted → SaaS — trading control for
-convenience, all rendering the same bundle.
+They sit on one spectrum — local → self-hosted → SaaS → enterprise suite — trading
+control for convenience, all rendering the same bundle.
 
 ## GitBook, in detail
 

@@ -50,6 +50,7 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [Caliper Analytics](entities/caliper-analytics.md) — 1EdTech learning-events standard; the OKF-bundle proof of concept.
 - [GitBook](entities/gitbook.md) — hosted docs platform; a presentation layer over an OKF bundle (Git Sync, MCP, llms.txt).
 - [Astro](entities/astro.md) — static-site generator behind 1EdTech's microsites; a self-hosted presentation layer.
+- [SharePoint](entities/sharepoint.md) — M365 content platform; raw-source corpus, bundle store, and enterprise presentation layer.
 
 ## Summaries
 - [The LLM-wiki concept — an overview](summaries/overview.md) — the front door: what it is, why, the layers/operations, trust, and where it applies.

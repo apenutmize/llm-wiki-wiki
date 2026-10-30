@@ -96,3 +96,8 @@ correct via a new entry. Format defined in [CLAUDE.md](CLAUDE.md) §6.
 - action: added a front-door overview of the whole concept
 - pages: [summaries/overview, assets/overview.png, assets/overview.svg, index, README]
 - note: "The LLM-wiki concept — an overview" with a master "At a glance" diagram (sources → compile → bundle+trust → presentation layer → humans/agents, powering SDLC/1EdTech applications); cross-links every major page and the Memex→Karpathy→OKF lineage. Linked as "start here" from index and README. Local only.
+
+## 2026-10-30  ·  ingest
+- action: ingested SharePoint as a presentation/storage/ingest option (analysis, not a fetched source)
+- pages: [entities/sharepoint, concepts/presentation-layer, index]
+- note: SharePoint in three roles (raw-source corpus via Graph, M365-native bundle store, Copilot query/presentation layer); OKF↔SharePoint mapping (content types, approval workflows, versioning, sensitivity labels); added as the 4th presentation-layer option (enterprise/M365). Marked generated/unverified with a "verify against Microsoft docs" caveat — no external source was fetched. WebFetch was unavailable this session.
