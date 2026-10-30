@@ -8,6 +8,8 @@ title: Index
 Catalog of every page, grouped by category. Kept in sync on each ingestion and
 page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 
+**New here? Start with [The LLM-wiki concept — an overview](summaries/overview.md).**
+
 ## Concepts
 - [Three-layer architecture](concepts/three-layer-architecture.md) — raw sources / wiki / schema layering, and why the separation matters.
 - [The three operations](concepts/three-operations.md) — ingest / query / lint, and how each compounds the wiki.
@@ -50,6 +52,7 @@ page creation. See [CLAUDE.md](CLAUDE.md) for the schema.
 - [Astro](entities/astro.md) — static-site generator behind 1EdTech's microsites; a self-hosted presentation layer.
 
 ## Summaries
+- [The LLM-wiki concept — an overview](summaries/overview.md) — the front door: what it is, why, the layers/operations, trust, and where it applies.
 - [LLM Wiki vs traditional RAG](summaries/llm-wiki-vs-rag.md) — why compounding beats re-retrieval, and where RAG still wins.
 - [OKF vs this wiki's schema](summaries/okf-vs-this-wiki-schema.md) — how the open standard compares to this wiki's own CLAUDE.md conventions.
 - [Applying the LLM wiki to the AI-native SDLC](summaries/llm-wiki-applied-to-sdlc.md) — adding a compounding memory layer to Anthropic's six-stage pipeline.

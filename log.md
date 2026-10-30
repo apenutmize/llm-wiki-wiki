@@ -91,3 +91,8 @@ correct via a new entry. Format defined in [CLAUDE.md](CLAUDE.md) §6.
 - action: densified existing pages
 - pages: [entities/obsidian, entities/1edtech-ai-enablers, concepts/open-knowledge-format, summaries/one-data-one-meaning, index]
 - note: positioned Obsidian as the local presentation layer; noted 1EdTech microsites are built on Astro (per maintainer); linked presentation-layer from OKF and the capstone. No contradictions.
+
+## 2026-10-30  ·  synthesize
+- action: added a front-door overview of the whole concept
+- pages: [summaries/overview, assets/overview.png, assets/overview.svg, index, README]
+- note: "The LLM-wiki concept — an overview" with a master "At a glance" diagram (sources → compile → bundle+trust → presentation layer → humans/agents, powering SDLC/1EdTech applications); cross-links every major page and the Memex→Karpathy→OKF lineage. Linked as "start here" from index and README. Local only.

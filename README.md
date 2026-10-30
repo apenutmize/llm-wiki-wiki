@@ -37,6 +37,7 @@ the append-only change history.
 
 ## Start here
 
+- **[The LLM-wiki concept — an overview](summaries/overview.md)** — the front door, with a master diagram.
 - **[index.md](index.md)** — the catalog of all pages.
 - **[CLAUDE.md](CLAUDE.md)** — the schema / operating manual.
 - **[LLM Wiki vs traditional RAG](summaries/llm-wiki-vs-rag.md)** — the central thesis.
