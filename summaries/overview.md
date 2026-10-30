@@ -92,6 +92,60 @@ One bundle, a swappable [presentation layer](../concepts/presentation-layer.md)
   that turns an interoperable "Completed" event into a teaching decision
   ([One Data, One Meaning](one-data-one-meaning.md)).
 
+## Set it up yourself
+Two components enable any LLM-wiki (per [One Data, One Meaning](one-data-one-meaning.md)):
+a **Markdown editor** and an **agent harness + LLM**.
+
+1. **Tools** — [Obsidian](../entities/obsidian.md) (edit/view, with a graph view) +
+   an agent such as Claude Code with a capable model.
+2. **Bootstrap the schema** — make a folder, hand the agent Karpathy's
+   [idea file](../sources/source-karpathy-llm-wiki-gist.md), and ask it to write a
+   [`CLAUDE.md`](../CLAUDE.md) schema for *your* topic — it should first ask what the
+   wiki is about and what sources you'll feed it. (That is exactly how this wiki began.)
+3. **Ingest** — give the agent a source (a link or a file); it writes a source note,
+   updates the related [concept/entity pages](../concepts/three-operations.md),
+   cross-links them, and appends to `log.md`.
+4. **Query** — ask questions against the wiki, and file good answers back as new pages.
+5. **Lint** — periodically ask it to check for contradictions, orphans, stale claims,
+   and broken links.
+6. **Harden (optional)** — put it in **git** (the source of truth), adopt
+   [OKF](../concepts/open-knowledge-format.md) frontmatter + [trust tiers](../concepts/provenance-and-trust.md),
+   run conformance/[attestation](../concepts/attested-computation.md) checks in CI, and
+   publish through a [presentation layer](../concepts/presentation-layer.md)
+   (Obsidian / Astro / GitBook / SharePoint).
+
+Copy this repo's [`CLAUDE.md`](../CLAUDE.md) as a starting schema.
+
+## Provider independence — and local LLMs
+The bundle is just **Markdown + YAML in git** — no proprietary runtime, SDK, or
+account ([OKF is a "format, not a platform"](../concepts/open-knowledge-format.md);
+"if you can `cat` a file, you can read it"). That makes the whole pattern
+vendor-neutral on three axes:
+
+- **The artifact** — any LLM, agent, editor, or site generator can read and write the
+  bundle. Nothing about it is tied to one provider; it outlives whichever tool made it.
+- **The agent harness** — Claude Code is one option; Codex-style agents (via an
+  `AGENTS.md`), Open Code, Aider, and others work too. The [schema](../CLAUDE.md) is a
+  plain-text convention, not an API. Joshi's walkthrough and the
+  [One Data, One Meaning](one-data-one-meaning.md) talk both note the pattern runs on
+  "any agent" and "most common models."
+- **The model** — you can run ingest / compile / lint with **open-weight models**
+  (Llama, Qwen, Mistral, DeepSeek) locally via Ollama, LM Studio, or llama.cpp. The
+  format and workflow are identical; only *synthesis quality* scales with model
+  capability — compiling and cross-linking many pages in one pass is the demanding
+  step, so a stronger model helps there, while a smaller/local one can still handle
+  queries.
+
+Why it matters:
+- **Privacy & data residency** — run a local model over sensitive learner or
+  enterprise data so nothing leaves the premises (the governance concern behind
+  [One Data, One Meaning](one-data-one-meaning.md) and [SharePoint](../entities/sharepoint.md)).
+- **Longevity & no lock-in** — the knowledge survives any single vendor; the bundle is
+  still readable in a plain text editor years from now.
+- **Mix and match** — a capable model for ingestion, a cheap or local one for queries;
+  [provenance](../concepts/provenance-and-trust.md) even records *which* model/tool
+  generated each page (the `generated.by` actor), so you can track or gate by model.
+
 ## Lineage
 Vannevar Bush's 1945 [Memex](../concepts/memex.md) (associative trails, abandoned over
 bookkeeping) → Karpathy's [LLM Wiki](../sources/source-karpathy-llm-wiki-gist.md)

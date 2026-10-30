@@ -28,6 +28,7 @@ flowchart LR
         OB["💎 Obsidian<br/>local editor / viewer"]
         AS["🚀 Astro<br/>self-hosted static site<br/>(1EdTech microsites)"]
         GB["📘 GitBook<br/>hosted SaaS · edit + review"]
+        SP["🏢 SharePoint<br/>enterprise / M365 · Copilot"]
     end
 
     HUM["👥 Humans"]
@@ -41,13 +42,12 @@ flowchart LR
     classDef pl fill:#e6f4ea,stroke:#34a853,color:#111;
     classDef human fill:#fde8f3,stroke:#c2508f,color:#111;
     classDef agent fill:#f1f3f4,stroke:#9aa0a6,color:#111;
-    class KB bundle; class OB,AS,GB pl; class HUM human; class AG agent;
+    class KB bundle; class OB,AS,GB,SP pl; class HUM human; class AG agent;
 ```
 
 One bundle, a swappable presentation layer, one audience of humans *and* agents. The
-options trade control for convenience (local → self-hosted → SaaS, plus
-[SharePoint](../entities/sharepoint.md) as the enterprise/M365 variant); the diagram
-shows the main three, and the GitBook case is drawn out in detail below.
+options trade control for convenience — local → self-hosted → SaaS →
+enterprise/M365; the GitBook case is drawn out in detail below.
 
 ## The rule: render, don't own
 The compiled bundle stays authoritative — the [LLM maintainer](three-layer-architecture.md)

@@ -101,3 +101,14 @@ correct via a new entry. Format defined in [CLAUDE.md](CLAUDE.md) §6.
 - action: ingested SharePoint as a presentation/storage/ingest option (analysis, not a fetched source)
 - pages: [entities/sharepoint, concepts/presentation-layer, index]
 - note: SharePoint in three roles (raw-source corpus via Graph, M365-native bundle store, Copilot query/presentation layer); OKF↔SharePoint mapping (content types, approval workflows, versioning, sensitivity labels); added as the 4th presentation-layer option (enterprise/M365). Marked generated/unverified with a "verify against Microsoft docs" caveat — no external source was fetched. WebFetch was unavailable this session.
+
+## 2026-10-30  ·  synthesize
+- action: updated the presentation-layer spectrum diagram to include SharePoint (now four options)
+- pages: [concepts/presentation-layer, assets/presentation-layer-spectrum.png, assets/presentation-layer-spectrum.svg]
+- note: added SharePoint node (enterprise/M365·Copilot); fixed the caption (local → self-hosted → SaaS → enterprise/M365). Local only.
+- action: added a "Set it up yourself" how-to section to the overview
+- pages: [summaries/overview]
+- note: six practical steps (tools → bootstrap CLAUDE.md → ingest → query → lint → harden with git/OKF/CI/presentation layer). Local only.
+- action: added a "Provider independence — and local LLMs" section to the overview
+- pages: [summaries/overview]
+- note: vendor-neutrality on three axes (artifact / harness / model); local open-weight models via Ollama/LM Studio/llama.cpp; privacy, longevity/no-lock-in, and mix-and-match with generated.by provenance. Local only.
