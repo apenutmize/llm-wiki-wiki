@@ -42,6 +42,39 @@ governance/data-residency boundary (which matters for schools and publishers).
 | per-user privacy | permissions + sensitivity labels |
 | [lint](../concepts/three-operations.md) / staleness | scheduled Power Automate flows + retention labels |
 
+## Implementation sketch
+A plausible build (one-way publish, the lowest-conflict option):
+
+1. **Source of truth stays in git.** The [LLM maintainer](../concepts/three-layer-architecture.md)
+   compiles/lints the bundle; CI (e.g. GitHub Actions) runs on merge.
+2. **Library + content types.** In the target site, create a document library with a
+   **content type per OKF `type`** (Concept, Entity, Summary, Source) and **site
+   columns** mirroring the frontmatter: `status` (Choice), `verified` (Person + date),
+   `stale_after` (Date), `sources` (text/lookup), `type` (Choice). The `.md` body is
+   the file; the frontmatter is also projected into columns for search, filtering, and
+   governance.
+3. **Publish step (Microsoft Graph).** On merge, CI authenticates as an **Entra ID app
+   registration** (least-privilege **`Sites.Selected`** scoped to the one site; secret
+   in Key Vault) and, per page, **upserts the file** and **sets the list-item fields**
+   from the parsed frontmatter via the Graph `driveItem` / `listItem fields` endpoints.
+4. **Trust gate.** Use the library's **content-approval** setting (or a Power Automate
+   approval) so a human sign-off flips `verified` → the
+   [human-reviewed tier](../concepts/provenance-and-trust.md); apply **sensitivity
+   labels** for privacy.
+5. **Serve humans.** Readers browse the library and **Microsoft Search**; for a nicer
+   surface, generate **SharePoint pages** from the content or use a markdown-rendering
+   / SPFx web part (native `.md` rendering is weak — see Frictions).
+6. **Serve agents.** Expose the library to **M365 Copilot** (it indexes SharePoint, or
+   register a **Graph connector**) so Copilot answers from the compiled, attested
+   bundle; agents outside M365 can read it via the Graph API or an MCP server wrapping
+   Graph.
+7. **Lint / staleness.** A scheduled **Power Automate** flow (or the agent's lint pass
+   over Graph) flags items past `stale_after` and surfaces orphans/broken links.
+
+Going **two-way** (editing in SharePoint *and* git) is possible but adds a reverse
+sync that reads changed list items back to git — keep **git as the conflict tiebreaker**,
+mirroring the "pull before push" discipline.
+
 ## Frictions
 - **Not Markdown/git-native** — no out-of-the-box bidirectional sync like
   [GitBook](gitbook.md)'s Git Sync; frontmatter ↔ metadata-column round-trip needs

@@ -112,3 +112,8 @@ correct via a new entry. Format defined in [CLAUDE.md](CLAUDE.md) §6.
 - action: added a "Provider independence — and local LLMs" section to the overview
 - pages: [summaries/overview]
 - note: vendor-neutrality on three axes (artifact / harness / model); local open-weight models via Ollama/LM Studio/llama.cpp; privacy, longevity/no-lock-in, and mix-and-match with generated.by provenance. Local only.
+
+## 2026-10-30  ·  synthesize
+- action: expanded entities/sharepoint with an "Implementation sketch"
+- pages: [entities/sharepoint]
+- note: concrete one-way-publish pipeline (git SoT + CI → Graph upsert into a library with content types/site columns mirroring frontmatter; Entra app reg with Sites.Selected; content-approval = verified tier; Copilot/Graph-connector for agents; Power Automate for lint/stale), plus the two-way option with git as tiebreaker. Still generated/unverified. Local only.
