@@ -28,7 +28,7 @@ flowchart LR
         TR["🔒 provenance · verified tier<br/>attested · stale_after"]
     end
 
-    PL["🖥️ Presentation layer<br/>Obsidian · Astro · GitBook"]
+    PL["🖥️ Presentation layer<br/>e.g. Obsidian · Astro · GitBook · SharePoint"]
     HUM["👥 Humans"]
     AG["🤝 Agents / AI"]
     APP["🧩 Applications<br/>AI-native SDLC · 1EdTech specs<br/>learning analytics"]
@@ -81,7 +81,7 @@ community can tighten OKF into an [OKF profile](../concepts/okf-profile.md).
 
 ## Serving it to humans and agents
 One bundle, a swappable [presentation layer](../concepts/presentation-layer.md)
-(Obsidian / Astro / GitBook) for people, and agent endpoints
+(e.g. Obsidian / Astro / GitBook / SharePoint) for people, and agent endpoints
 ([MCP](../concepts/model-context-protocol.md), `llms.txt`, EduQuery) for machines —
 "one architecture can serve humans and Agents alike."
 
@@ -112,7 +112,7 @@ a **Markdown editor** and an **agent harness + LLM**.
    [OKF](../concepts/open-knowledge-format.md) frontmatter + [trust tiers](../concepts/provenance-and-trust.md),
    run conformance/[attestation](../concepts/attested-computation.md) checks in CI, and
    publish through a [presentation layer](../concepts/presentation-layer.md)
-   (Obsidian / Astro / GitBook / SharePoint).
+   (e.g. Obsidian / Astro / GitBook / SharePoint).
 
 Copy this repo's [`CLAUDE.md`](../CLAUDE.md) as a starting schema.
 

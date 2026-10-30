@@ -29,6 +29,7 @@ flowchart LR
         AS["🚀 Astro<br/>self-hosted static site<br/>(1EdTech microsites)"]
         GB["📘 GitBook<br/>hosted SaaS · edit + review"]
         SP["🏢 SharePoint<br/>enterprise / M365 · Copilot"]
+        OT["➕ …others<br/>any Markdown renderer"]
     end
 
     HUM["👥 Humans"]
@@ -40,9 +41,10 @@ flowchart LR
 
     classDef bundle fill:#fef7e0,stroke:#fbbc04,color:#111;
     classDef pl fill:#e6f4ea,stroke:#34a853,color:#111;
+    classDef other fill:#eef1f4,stroke:#9aa0a6,color:#555;
     classDef human fill:#fde8f3,stroke:#c2508f,color:#111;
     classDef agent fill:#f1f3f4,stroke:#9aa0a6,color:#111;
-    class KB bundle; class OB,AS,GB,SP pl; class HUM human; class AG agent;
+    class KB bundle; class OB,AS,GB,SP pl; class OT other; class HUM human; class AG agent;
 ```
 
 One bundle, a swappable presentation layer, one audience of humans *and* agents. The
@@ -57,6 +59,9 @@ also allows editing, commits back through git). It should never hold the
 those fields may not round-trip.
 
 ## Concrete options
+These are examples, not an exhaustive list — anything that can render Markdown + YAML
+(a static-site generator, a wiki engine, a docs platform) can serve as the layer.
+
 - **[Obsidian](../entities/obsidian.md)** — a *local* editor/viewer over the vault;
   zero hosting, great for the maintainer, not a public site.
 - **[Astro](../entities/astro.md)** — a *self-built, self-hosted* static site;

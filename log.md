@@ -117,3 +117,11 @@ correct via a new entry. Format defined in [CLAUDE.md](CLAUDE.md) §6.
 - action: expanded entities/sharepoint with an "Implementation sketch"
 - pages: [entities/sharepoint]
 - note: concrete one-way-publish pipeline (git SoT + CI → Graph upsert into a library with content types/site columns mirroring frontmatter; Entra app reg with Sites.Selected; content-approval = verified tier; Copilot/Graph-connector for agents; Power Automate for lint/stale), plus the two-way option with git as tiebreaker. Still generated/unverified. Local only.
+
+## 2026-10-30  ·  maintenance
+- action: made SharePoint consistent across the overview
+- pages: [summaries/overview, assets/overview.png, assets/overview.svg]
+- note: added SharePoint to the "Serving it" line and the master diagram's presentation-layer node (setup step already listed it). Local only.
+- action: made the presentation-layer list explicitly non-exhaustive
+- pages: [summaries/overview, concepts/presentation-layer, assets/overview.png, assets/overview.svg, assets/presentation-layer-spectrum.png, assets/presentation-layer-spectrum.svg]
+- note: prefixed the enumerations with "e.g."; added a note that any Markdown renderer can serve; added a greyed "…others" node to the spectrum diagram and re-rendered both diagrams. Local only.
